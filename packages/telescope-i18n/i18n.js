@@ -6,7 +6,7 @@ setLanguage = function (language) {
   // moment
   Session.set('momentReady', false);
   // console.log('moment loading…')
-  if (language.toLowerCase() === "en") {
+  if (language.toLowerCase() === "pt-BR") {
     Session.set('momentReady', true);
   } else {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {
@@ -33,15 +33,15 @@ setLanguage = function (language) {
 i18n = {
   t: function (str, options) {
     if (Meteor.isServer) {
-      return TAPi18n.__(str, options, getSetting('language', 'en')); 
+      return TAPi18n.__(str, options, getSetting('language', 'pt-BR'));
     } else {
-      return TAPi18n.__(str, options); 
+      return TAPi18n.__(str, options);
     }
   }
 };
 
 Meteor.startup(function () {
-  
+
   if (Meteor.isClient) {
 
     // doesn't quite work yet
@@ -56,7 +56,7 @@ Meteor.startup(function () {
     //   }
     // });
 
-    setLanguage(getSetting('language', 'en'));
+    setLanguage(getSetting('language', 'pt-BR'));
   }
 
 });
