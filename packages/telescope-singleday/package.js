@@ -27,7 +27,7 @@ Package.onUse(function (api) {
   api.use([
     'jquery',
     'underscore',
-    'templating' 
+    'templating'
   ], ['client']);
 
   // server
@@ -63,7 +63,7 @@ Package.onUse(function (api) {
   // server
 
   api.add_files([
-  ], ['server']);    
+  ], ['server']);
 
   // i18n languages (must come last)
 
@@ -75,7 +75,8 @@ Package.onUse(function (api) {
     'i18n/fr.i18n.json',
     'i18n/it.i18n.json',
     'i18n/tr.i18n.json',
-    'i18n/zh-CN.i18n.json'
+    'i18n/zh-CN.i18n.json',
+    'i18n/pt-BR.i18n.json'
   ], ['client', 'server']);
 
   // -------------------------------- 3. Variables to export --------------------------------
