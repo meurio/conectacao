@@ -1,4 +1,13 @@
 <template name="posts_list">
+  <div class="grid grid-module">
+    <p>Esse é um espaço de discussão e ação exclusivo para os membros mais ativos da Rede Meu Rio e Minha Sampa. São milhares de pessoas interessadas em contribuir para apontar problemas e discutir soluções para a cidade. </p>
+    <br>
+    <p>Aqui, qualquer pessoa pode criar um círculo de conversa em torno de algum problema da cidade e também encontrar ferramentas necessárias para agir conjuntamente. Acreditamos que esse é o caminho para ampliarmos a força da nossa Rede e construirmos mobilizações ainda mais poderosas, que deixarão um impacto real na vida de milhares de pessoas.</p>
+    <br>
+    <p>Crie seu perfil para poder fazer seus comentários, priorizar e votar em comentários de terceiros e criar novos fóruns de conversa baseados nos problemas que você quer encontrar de forma colaborativa uma solução.</p>
+    <br>
+    <p>Vamos juntos?! ;)</p>
+  </div>
   <div class="posts-wrapper grid grid-module">
     {{> UI.dynamic template=postsListIncoming data=incoming}}
     <div class="posts list {{postsLayout}}" aria-live="polite">
